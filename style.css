@@ -1,0 +1,141 @@
+body{
+	background-color: #edf5e1;
+	font-family: arial;
+	text-transform: uppercase;
+	text-shadow: 0.5px 0.5px 0 #ccc;
+}
+
+.background{
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	left: 0;
+	transition:0.75s;
+}
+
+.nav{
+	padding: 0;
+	width: 800px;
+	margin: 150px auto;
+}
+
+ul {
+	list-style: none;
+}
+li a{ padding: 30px; float: left;width: 100px; 
+text-align: center;
+font-size: 15px;
+color: #fff;
+
+text-decoration: none; }
+
+
+li a:hover .circle{
+	position: relative;
+	z-index: 1;
+	top: -59px; 
+	width: 80px;
+	height: 80px;
+	 border-radius: 100px;
+	 animation: bounceInUp 2s ease-out infinite;
+	 background-color: #fdc7be;
+}
+
+li i{ height: 50px }
+li a:hover i{
+	transform: translatey(10px);
+}
+li a:hover .title{
+	transform: translateY(10px);
+	transition: .5s;
+	font-size: 18px;
+	 font-weight: bold;
+}
+li a.title:hover{
+	transform: translateY(-10px);
+}
+
+.nav li:first-child a{
+	background-color: #05387b; 
+}
+
+
+.nav li:nth-child(2) a{
+	background-color: #F08080
+}
+
+.nav li:nth-child(3) a{
+	background-color: #00acee;
+}
+.nav li:nth-child(4) a{
+	background-color: #ea4c89;
+}
+
+.nav li:nth-child(5) a{
+	background-color: #20B2AA	
+}
+
+.nav li:nth-child(6) a{
+	background-color: rgba(0,0,0,.2);}
+
+	.nav li:nth-child(7) a{
+	background-color: #9932CC;}
+
+	.nav li:nth-child(8) a{
+	background-color: #E9967A}
+
+	
+	.nav li:nth-child(9) a{
+	background-color: #8FBC8F;}
+
+
+
+/*
+
+.nav li:first-child:hover~ .background  {
+		background-color: red !important; 
+	}
+
+	nav li:nth-child(2) a:hover ~.background{
+	background-color: #8FBC8F;}
+
+	.nav li:nth-child(3):hover ~ .background{
+	background-color: #00acee;
+	}
+
+	.nav li:nth-child(4):hover ~ .background{
+	background-color: background-color: #ea4c89;
+	}
+
+	.nav li:nth-child(5):hover ~ .background{
+	background-color: background-color: #20B2AA	
+	}
+
+	.nav li:nth-child(6):hover ~ .background{
+	background-color: rgba(0,0,0,.2);
+	}
+
+	.nav li:nth-child(7):hover ~ .background{
+	background-color: background-color: #9932CC;
+	}
+
+	.nav li:nth-child(8):hover ~ .background{
+		background-color: #E9967A
+	}
+
+	.nav li:nth-child(9):hover ~ .background{
+	background-color: #8FBC8F;
+	}
+
+
+@keyframes bounceInUp {
+
+
+	0%{ opacity: .7; transform: scale(0.7 ,0.7); }
+
+	50%{opacity: .3}
+
+	100%{opacity: 0; transform: scale(1.15);}
+}
+*/
